@@ -106,7 +106,7 @@
 }
 
 .portfolio-block:hover .portfolio-container {
- display: block;
+  display: block;
   
 }
 
@@ -209,13 +209,13 @@ hr {
 
 .modal-wrapper {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
-  display: grid;
   width: 45%;
   align-self: center;
   margin: 0 auto;
   margin-top: 5%;
   background-color: white;
   position: relative;
+  padding: 1%;
 }
 
 .close {
@@ -252,12 +252,13 @@ hr {
 
 input {
   padding: 4%;
-  border-color: rgb(112, 111, 111);
   border: solid 1px;
+  width: 100%;
 }
 
 .form-block select {
   padding: 4%;
+  width: 100%;
 }
 
 textarea {
@@ -270,15 +271,15 @@ textarea {
 }
 
 .btn_modal {
-  padding: 10px 50px;
-    border-radius: 27px;
-    border: none;
-    font-family: Helvetica;
-    font-weight: bold;
-    letter-spacing: 2px;
-    font-size: 10px;
-    cursor: pointer;
-    margin: 3% auto;
+  padding: 3% 5%;
+  border-radius: 27px;
+  border: none;
+  font-family: Helvetica;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 10px;
+  cursor: pointer;
+  margin: 3% auto;
 }
 
 .btn_modal:focus {
@@ -313,8 +314,26 @@ textarea {
   color: gray;
 }
 
+.btn-exit {
+  margin-top: 3%;
+  color: gray;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-exit:focus {
+  outline: none;
+}
+
+
 @media screen and (max-width: 1024px) {
-  .nav-container a{
+  .portfolio-block:hover .portfolio-container {
+    display: block;
+    width: 49%;
+  }
+  
+  .nav-container a {
     display: none;
   }
 
@@ -361,10 +380,8 @@ textarea {
     position: fixed;
     top: 20px;
     left: 20px;
-
     width: 26px;
     height: 26px;
-
     cursor: pointer;
     z-index: 1;
   }
@@ -420,7 +437,7 @@ textarea {
 
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: normal;
 
     text-decoration: none;
 
@@ -428,22 +445,177 @@ textarea {
   }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 768px) {
+    .form-container {
+      display: block;
+      margin: 0 10%;
+  }
+
+    .form-block-text textarea {
+      margin-top: 5%;
+  }
+
+    .modal-wrapper h2 {
+      font-size: 15px;
+  }
+
+    .modal-wrapper p {
+      font-size: 11px;
+  }
+
+  .price-container h1 {
+    font-size: 20px;
+  }
+
+  .basic h2, .medium h2 {
+    font-size: 20px;
+  }
+
+  .basic li, .medium li {
+    font-size: 15px;
+  }
+
   .portfolio-container {
-    display: none;
-    position: absolute;
-    text-align: left;
-    left: 10%;
-    z-index: 2;
+    left: 30%;
+  }
 }
+
+@media screen and (max-width: 620px) {
+  .portfolio-container {
+    left: 25%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .modal-wrapper h2 {
+    font-size: 12px;
+  }
+
+  .modal-wrapper p {
+    font-size: 11px;
+  }
+
+  .close {
+    width: 20px;
+    height: 20px;
+  }
+
+  .form-block input {
+    font-size: 11px;
+  }
+
+  .form-block select {
+    font-size: 11px;
+  }
+
+  .form-block-text textarea {
+    font-size: 11px;
+  }
+
+  .footer-block h3 {
+    font-size: 12px;
+  }
+
+  .form_title h1 {
+    font-size: 22px;
+  }
+
+  .form_title p {
+    font-size: 15px;
+  }
+
+  .menu__box a {
+    font-size: 12px;
+  }
+
+  .portfolio-container {
+    width: 50%;
+  }
+
+  .basic li, .medium li {
+    font-size: 10px;
+  }
+
+  .portfolio-container {
+    left: 25%;
+  }
 }
 
 @media screen and (max-width: 425px) {
+    .modal-wrapper h2 {
+      font-size: 9px;
+  }
+
+  .modal-wrapper p {
+    font-size: 8px;
+  }
+
+  .close {
+    width: 11px;
+    height: 11px;
+  }
+
+  .form-block input {
+    font-size: 8px;
+  }
+
+  .form-block-text textarea {
+    font-size: 8px;
+  }
+
+  .form-block select {
+    font-size: 8px;
+  }
+
+  .menu__box a {
+    font-size: 9px;
+  }
+
+  .basic, .medium {
+    display: inline-block;
+  }
+
+  .family-container {
+    display: inline-block;
+  }
+
+  .portrait-container {
+    display: inline-block;
+  }
+
+  .family1-block {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0 10%;
+  }
+
+  .family1-block img {
+    margin-top: 5%;
+  }
+
+  .family1 h2 {
+    margin: 0;
+    font-size: 17px;
+  }
+
+  .about-me-container h1 {
+    font-size: 22px;
+  }
+
+  .contact a {
+    font-size: 20px;
+  }
+
   .email a {
     font-size: 20px;
     color: gray;
-}
-.nav-container a {
+  }
+
+  .nav-container a {
   font-size: 10px;
-}
+  }
+
+  .menu__box {
+    width: 30%;
+  }
 }

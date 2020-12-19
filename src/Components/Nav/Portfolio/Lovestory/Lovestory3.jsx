@@ -11,6 +11,7 @@ import img9 from '../../../img/Valera&iRA/IMG_1791.jpg'
 import img10 from '../../../img/Valera&iRA/IMG_1802.jpg'
 import img11 from '../../../img/Valera&iRA/IMG_1810.jpg'
 import img12 from '../../../img/Valera&iRA/IMG_1838.jpg'
+import {NavLink} from 'react-router-dom'
 
 const Lovestory3 = () => {
     return (
@@ -30,7 +31,11 @@ const Lovestory3 = () => {
                 <img src={img11} alt=""/>
                 <img src={img12} alt=""/>
             </div>
-            
+            <NavLink to='/lovestory'>
+                <button className='btn-exit'>
+                ← НАЗАД К ГАЛЕРЕЯМ
+                </button>
+            </NavLink>
         </div>
     )
 }

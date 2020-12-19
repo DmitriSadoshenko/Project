@@ -7,6 +7,7 @@ import img6 from '../../../img/tANYA/IMG_9893.jpg'
 import img7 from '../../../img/tANYA/IMG_9897.jpg'
 import img8 from '../../../img/tANYA/IMG_9903.jpg'
 import img9 from '../../../img/tANYA/IMG_9953.jpg'
+import {NavLink} from 'react-router-dom'
 
 const Portrait2 = () => {
     return (
@@ -22,7 +23,11 @@ const Portrait2 = () => {
                 <img src={img8} alt=""/>
                 <img src={img9} alt=""/>
             </div>
-            
+            <NavLink to='/portrait'>
+                <button className='btn-exit'>
+                ← НАЗАД К ГАЛЕРЕЯМ
+                </button>
+            </NavLink>
         </div>
     )
 }

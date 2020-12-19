@@ -8,6 +8,7 @@ import img7 from '../../../img/Liza & Atikus/IMG_0544.gif'
 import img8 from '../../../img/Liza & Atikus/IMG_0557.gif'
 import img9 from '../../../img/Liza & Atikus/IMG_0560.gif'
 import img10 from '../../../img/Liza & Atikus/IMG_0574-Recovered.gif'
+import { NavLink } from 'react-router-dom';
 
 const Family2 = () => {
     return (
@@ -24,7 +25,11 @@ const Family2 = () => {
                 <img src={img8} alt=""/>
                 <img src={img4} alt=""/>
             </div>
-            
+            <NavLink to='/family'>
+                <button className='btn-exit'>
+                ← НАЗАД К ГАЛЕРЕЯМ
+                </button>
+            </NavLink>
         </div>
     )
 }

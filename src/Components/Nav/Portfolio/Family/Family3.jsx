@@ -14,6 +14,7 @@ import img12 from '../../../img/Valera,Ira,Miron/IMG_1509.jpg'
 import img13 from '../../../img/Valera,Ira,Miron/IMG_1553.jpg'
 import img14 from '../../../img/Valera,Ira,Miron/IMG_1602.jpg'
 import img15 from '../../../img/Valera,Ira,Miron/IMG_1798.jpg'
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -38,7 +39,11 @@ const Family3 = () => {
                 <img src={img6} alt=""/>
                 <img src={img15} alt=""/>
             </div>
-            
+            <NavLink to='/family'>
+                <button className='btn-exit'>
+                ← НАЗАД К ГАЛЕРЕЯМ
+                </button>
+            </NavLink>
         </div>
     )
 }
